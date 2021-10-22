@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  color: wheat;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pattern-top {
+  position: absolute;
+  top: -68%;
+  left: -15%;
+  z-index: -999;
+}
+
+.pattern-bottom {
+  position: absolute;
+  bottom: -82%;
+  right: -15%;
+  z-index: -999;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.card {
+  color: hsl(229, 23%, 23%);
+  border-radius: 2rem;
+  box-shadow: 0 1rem 4rem rgb(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__head {
+  width: 100%;
+  height: 15rem;
+  background: url(images/bg-pattern-card.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card__main {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  position: relative;
+}
+
+.card__main img {
+  position: absolute;
+  top: -5rem;
+  border-radius: 5rem;
+  outline: 0.5rem solid #fff;
+}
+
+.card__main h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.card__main h2 span,
+.card__main p {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.card__main p {
+  font-size: 1.5rem;
+}
+
+.card__footer {
+  border-top: 0.1rem solid hsl(0, 0%, 85%);
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem 5rem;
+  border-radius: 0 0 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__footer p {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.card__footer--1,
+.card__footer--2,
+.card__footer--3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__footer div:not(:first-child) {
+  margin-left: 5rem;
+}
+
+/* -------------------------------------------------- */
+/* MEDIA QUERIES */
+/* -------------------------------------------------- */
+@media only screen and (max-width: 1300px) {
+  .pattern-top {
+    top: -73%;
+    left: -40%;
+  }
+
+  .pattern-bottom {
+    bottom: -92%;
+    right: -40%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .pattern-top {
+    top: -73%;
+    left: -70%;
+  }
+
+  .pattern-bottom {
+    bottom: -92%;
+    right: -70%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pattern-top {
+    top: -80%;
+    left: -100%;
+  }
+
+  .pattern-bottom {
+    bottom: -95%;
+    right: -100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .pattern-top {
+    top: -80%;
+    left: -135%;
+  }
+
+  .pattern-bottom {
+    bottom: -95%;
+    right: -135%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .pattern-top {
+    top: -90%;
+    left: -190%;
+  }
+
+  .pattern-bottom {
+    bottom: -90%;
+    right: -190%;
+  }
+}

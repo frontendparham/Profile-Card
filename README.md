@@ -19,7 +19,7 @@ A Responsive Profile Card
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https://frontendparham.github.io/Profile-Card/)
+- Live Site URL: [GitHub Pages](https://frontendparham.github.io/Stats-Preview-Card/)
 
 ## My process
 
